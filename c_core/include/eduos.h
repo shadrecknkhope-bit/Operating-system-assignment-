@@ -4,18 +4,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <unistd.h>
-#include <pthread.h>
+#include <windows.h>
+#include <process.h>
 #include <time.h>
-#include <fcntl.h>
-#include <sys/mman.h>
-#include <sys/stat.h>
-#include <sys/types.h>
-#include <semaphore.h>
 
 #define MAX_PROCESSES 100
 #define THREAD_POOL_SIZE 4
-#define QUEUE_SIZE 20
+
+typedef int pid_t;
 
 typedef struct {
     pid_t pid;
