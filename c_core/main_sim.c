@@ -1,8 +1,10 @@
 #include "include/eduos.h"
 #include "thread_manager.h"
 
+
 int main()
 {
+    //thread
     ThreadPool pool;
 
     init_thread_pool(&pool);
@@ -18,6 +20,17 @@ int main()
     sleep(10);
 
     destroy_thread_pool(&pool);
+
+    //ipc
+    printf("=== IPC DEMO START ===\n");
+
+    demo_pipe_ipc();
+
+    printf("\n----------------------\n");
+
+    demo_shared_memory();
+
+    printf("=== IPC DEMO END ===\n");
 
     return 0;
 }

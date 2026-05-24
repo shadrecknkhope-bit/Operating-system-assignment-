@@ -58,6 +58,17 @@ void edu_exit(pid_t pid, int exit_code);
 
 void edu_ps();
 
-void save_pcb_snapshot();
+/* IPC Functions */
+void ipc_init();
+
+void ipc_send(pid_t pid, const char *msg);
+
+void ipc_receive(pid_t pid);
+
+void ipc_cleanup();
+
+void demo_pipe_ipc();
+
+void demo_shared_memory();
 
 #endif
