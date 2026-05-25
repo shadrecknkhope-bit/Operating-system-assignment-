@@ -1,9 +1,38 @@
 #include "include/eduos.h"
 #include "thread_manager.h"
+#include <stdio.h>
+
+void write_pcb_snapshot() {
+    FILE *f = fopen("pcb_snapshot.json", "w");
+
+    if (!f) {
+        perror("fopen failed");
+        return;
+    }
+
+    if (f == NULL) {
+        printf("Failed to create PCB file\n");
+        return;
+    }
+
+    fprintf(f, "[\n");
+
+    fprintf(f, "  {\"pid\": \"P1\", \"arrival\": 0, \"burst\": 5},\n");
+    fprintf(f, "  {\"pid\": \"P2\", \"arrival\": 1, \"burst\": 3},\n");
+    fprintf(f, "  {\"pid\": \"P3\", \"arrival\": 2, \"burst\": 4}\n");
+
+    fprintf(f, "]\n");
+
+    fclose(f);
+
+    printf("[PCB] Snapshot written successfully\n");
+}
 
 
 int main()
 {
+    write_pcb_snapshot();
+
     //thread
     ThreadPool pool;
 

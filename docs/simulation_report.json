@@ -1,0 +1,11 @@
+{
+    "timestamp": "2026-05-25 09:47:41.921934",
+    "status": "Simulation Completed",
+    "charts_location": "docs/screenshots/",
+    "scheduler": [
+        "FCFS",
+        "SJF",
+        "Priority",
+        "Round Robin"
+    ]
+}
