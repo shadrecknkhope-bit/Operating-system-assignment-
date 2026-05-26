@@ -562,48 +562,10 @@ if __name__ == "__main__":
         print("No input source provided")
         exit()
 
-    processes = []
-
-    # =========================
-    # INPUT SOURCE HANDLING
-    # =========================
-
-    if args.random:
-        processes = generate_random_processes(args.random, args.seed)
-
-    elif args.file:
-        processes = load_from_csv(args.file)
-
-    elif args.pcb:
-        processes = load_from_pcb_snapshot(args.pcb)
-
-    else:
-        print("No input provided. Use --random, --file, or --pcb")
-        exit()
-
-    # =========================
-    # SHOW INPUT DATA
-    # =========================
-
     print("\n=== INPUT PROCESSES ===")
+
     for p in processes:
         print(p)
-
-
-    args = parse_arguments()
-
-    if args.random:
-        processes = generate_random_processes(args.random, args.seed)
-
-    elif args.file:
-        processes = load_from_csv(args.file)
-
-    elif args.pcb:
-        processes = load_from_pcb_snapshot(args.pcb)
-
-    else:
-        print("No input source provided")
-        exit()
 
     results_summary = {}
 
@@ -662,4 +624,3 @@ if __name__ == "__main__":
 
     # ================= COMPARISON =================
     comparison_chart(results_summary)
-
