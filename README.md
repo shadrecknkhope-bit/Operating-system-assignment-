@@ -75,7 +75,4 @@ EDUos/
 gcc --version
 
 
-POSIX Threads: https://man7.org/linux/
-Python Docs: https://docs.python.org/3/
-MSYS2 Documentation: https://www.msys2.org/
-CS 2104 Lecture Notes
+
