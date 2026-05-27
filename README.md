@@ -39,26 +39,6 @@ The project consists of:
 EDUos/
 │
 ├── c_core/
-<<<<<<< HEAD
-│ ├── main_sim.c 
-│ ├── process_manager.c 
-│ ├── thread_manager.c 
-│ ├── ipc_module.c
-│ ├── scheduler.c
-│ ├── include/
-│ │ └── eduos.h 
-│ └── eduos.exe
-│
-├── python_scheduler/
-│ ├── scheduler_sim.py 
-│ ├── sample_processes.csv 
-│ ├── pcb_snapshot.json
-│ ├── requirements.txt 
-│ └── pycache/
-│
-├── docs/
-│ └── screenshots/ 
-=======
 │   ├── main_sim.c
 │   ├── process_manager.c
 │   ├── thread_manager.c
@@ -77,7 +57,6 @@ EDUos/
 │
 ├── docs/
 │   └── screenshots/
->>>>>>> 722e2fb (Finalize README, report, screenshots, and scheduling outputs)
 │
 ├── README.md
 └── .gitignore
@@ -98,10 +77,6 @@ EDUos/
 gcc --version
 ```
 
-<<<<<<< HEAD
-
-
-=======
 ### Python Requirements
 
 - Python 3.8+
@@ -214,4 +189,3 @@ gcc -Wall -Wextra -pthread -std=c11
 - Python Docs: https://docs.python.org/3/
 - MSYS2 Documentation: https://www.msys2.org/
 - 351 CS 2104 Lecture Notes
->>>>>>> 722e2fb (Finalize README, report, screenshots, and scheduling outputs)
