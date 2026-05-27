@@ -33,7 +33,6 @@ The project consists of:
 ---
 
 # Project Structure
-# Project Structure
 
 ```text
 EDUos/
